@@ -58,3 +58,5 @@ rules = association_rules(freq, metric="lift", min_threshold=1)
 
 st.write("Strong buying relationships:")
 st.dataframe(rules.sort_values("lift", ascending=False).head(10))
+
+streamlit run dashboard.py
